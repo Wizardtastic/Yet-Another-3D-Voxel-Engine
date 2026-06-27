@@ -1,0 +1,41 @@
+# Voxel Engine Configuration
+# Delete this file to reset to defaults. CLI flags override these values.
+
+[graphics]
+width = 1280
+height = 720
+vsync = true
+fog_distance = 320.0
+shadow_enabled = true
+shadow_resolution = 2048
+exposure = 0.6
+vignette_strength = 0.15
+textures_dir = "assets/textures"  # directory of PNG texture overrides (see textures.toml)
+
+[world]
+seed = 1337
+load_radius = 6
+unload_radius = 8
+day_length = 1200.0  # seconds per full day cycle (1200 = 20 minutes)
+assets_path = "assets"  # path to data-driven block definitions (null = use builtins)
+
+[player]
+walk_speed = 4.317
+sprint_speed = 5.6
+jump_speed = 7.5
+gravity = 26.0
+mouse_sensitivity = 0.0022
+fly_speed = 20.0
+
+[keys]
+debug_overlay = "F3"
+wireframe = "F4"
+fly = "F5"
+chat = "T"
+render_distance_up = "F8"
+render_distance_down = "F9"
+screenshot = "F2"
+pause = "Escape"
+
+[debug]
+show_overlay = false

@@ -1,0 +1,83 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/core",
+    "crates/ecs",
+    "crates/render",
+    "crates/world",
+    "crates/physics",
+    "crates/game",
+    "crates/assets",
+    "crates/engine",
+    "crates/app",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.80"
+license = "MIT OR Apache-2.0"
+repository = "https://example.com/voxel-engine"
+
+# Shared dependency versions. Crates inherit via `foo.workspace = true`.
+# Keeping these in one place makes upgrades and auditing trivial.
+[workspace.dependencies]
+# --- Logging / errors ---
+log = "0.4"
+env_logger = "0.11"
+anyhow = "1"
+thiserror = "1"
+
+# --- Math / serialization ---
+glam = { version = "0.29", features = ["bytemuck", "serde"] }
+bytemuck = { version = "1", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+byteorder = "1"
+
+# --- Concurrency ---
+rayon = "1"
+flume = "0.11"
+parking_lot = "0.12"
+
+# --- Compression ---
+flate2 = "1"
+
+# --- Vulkan / windowing ---
+ash = "0.38"
+ash-window = "0.13"
+gpu-allocator = { version = "0.27", default-features = false, features = ["vulkan"] }
+raw-window-handle = "0.6"
+winit = "0.30"
+
+# --- Assets / worldgen ---
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+fastnoise-lite = "1"
+
+# --- CLI parsing ---
+clap = { version = "4", features = ["derive"] }
+
+# --- Testing ---
+proptest = { version = "1", default-features = false, features = ["std"] }
+
+# --- Internal crates ---
+voxel-core = { path = "crates/core" }
+voxel-ecs = { path = "crates/ecs" }
+voxel-render = { path = "crates/render" }
+voxel-world = { path = "crates/world" }
+voxel-physics = { path = "crates/physics" }
+voxel-game = { path = "crates/game" }
+voxel-assets = { path = "crates/assets" }
+voxel-engine = { path = "crates/engine" }
+
+[profile.dev]
+opt-level = 1          # voxel meshing + noise are heavy; pure -O0 is unusably slow
+debug = true
+split-debuginfo = "packed"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+debug = false
