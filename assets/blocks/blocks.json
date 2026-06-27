@@ -1,0 +1,316 @@
+[
+  {
+    "name": "stone",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "same": 1 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "dirt",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "same": 2 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "grass",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "top": 3, "bottom": 2, "side": 4 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "sand",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "same": 5 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "water",
+    "kind": "liquid",
+    "solid": false,
+    "opaque": false,
+    "breakable": false,
+    "replaceable": true,
+    "textures": { "same": 6 },
+    "emission": 0,
+    "light_absorption": 12
+  },
+  {
+    "name": "wood",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "top": 8, "bottom": 8, "side": 7 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "leaves",
+    "kind": "transparent",
+    "solid": true,
+    "opaque": false,
+    "textures": { "same": 9 },
+    "emission": 0,
+    "light_absorption": 14
+  },
+  {
+    "name": "bedrock",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "same": 10 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "coal_ore",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "same": 11 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "iron_ore",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "same": 12 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "gold_ore",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "same": 13 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "diamond_ore",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "same": 14 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "planks",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "same": 15 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "cobblestone",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "same": 16 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "glass",
+    "kind": "transparent",
+    "solid": true,
+    "opaque": false,
+    "textures": { "same": 17 },
+    "emission": 0,
+    "light_absorption": 14
+  },
+  {
+    "name": "gravel",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "same": 18 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "snow",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "textures": { "same": 19 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "torch",
+    "kind": "solid",
+    "solid": true,
+    "opaque": false,
+    "textures": { "same": 21 },
+    "emission": 14,
+    "light_absorption": 0
+  },
+  {
+    "name": "bucket",
+    "kind": "solid",
+    "solid": false,
+    "opaque": false,
+    "textures": { "same": 22 },
+    "emission": 0,
+    "light_absorption": 0
+  },
+  {
+    "name": "water_bucket",
+    "kind": "solid",
+    "solid": false,
+    "opaque": false,
+    "textures": { "same": 23 },
+    "emission": 0,
+    "light_absorption": 0
+  },
+  {
+    "name": "tall_grass",
+    "kind": "foliage",
+    "solid": false,
+    "opaque": false,
+    "breakable": true,
+    "replaceable": true,
+    "textures": { "same": 24 },
+    "emission": 0,
+    "light_absorption": 0
+  },
+  {
+    "name": "poppy",
+    "kind": "foliage",
+    "solid": false,
+    "opaque": false,
+    "breakable": true,
+    "replaceable": true,
+    "textures": { "same": 25 },
+    "emission": 0,
+    "light_absorption": 0
+  },
+  {
+    "name": "dandelion",
+    "kind": "foliage",
+    "solid": false,
+    "opaque": false,
+    "breakable": true,
+    "replaceable": true,
+    "textures": { "same": 26 },
+    "emission": 0,
+    "light_absorption": 0
+  },
+  {
+    "name": "cactus",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "breakable": true,
+    "replaceable": false,
+    "textures": { "same": 27 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "mushroom_red",
+    "kind": "foliage",
+    "solid": false,
+    "opaque": false,
+    "breakable": true,
+    "replaceable": true,
+    "textures": { "same": 28 },
+    "emission": 0,
+    "light_absorption": 0
+  },
+  {
+    "name": "mushroom_brown",
+    "kind": "foliage",
+    "solid": false,
+    "opaque": false,
+    "breakable": true,
+    "replaceable": true,
+    "textures": { "same": 29 },
+    "emission": 0,
+    "light_absorption": 0
+  },
+  {
+    "name": "birch_log",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "breakable": true,
+    "replaceable": false,
+    "textures": { "top": 31, "bottom": 31, "side": 30 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "birch_leaves",
+    "kind": "transparent",
+    "solid": true,
+    "opaque": false,
+    "breakable": true,
+    "replaceable": false,
+    "textures": { "same": 32 },
+    "emission": 0,
+    "light_absorption": 14
+  },
+  {
+    "name": "spruce_log",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "breakable": true,
+    "replaceable": false,
+    "textures": { "top": 34, "bottom": 34, "side": 33 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "spruce_leaves",
+    "kind": "transparent",
+    "solid": true,
+    "opaque": false,
+    "breakable": true,
+    "replaceable": false,
+    "textures": { "same": 35 },
+    "emission": 0,
+    "light_absorption": 14
+  },
+  {
+    "name": "mossy_cobblestone",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "breakable": true,
+    "replaceable": false,
+    "textures": { "same": 36 },
+    "emission": 0,
+    "light_absorption": 15
+  },
+  {
+    "name": "chest",
+    "kind": "solid",
+    "solid": true,
+    "opaque": true,
+    "breakable": true,
+    "replaceable": false,
+    "textures": { "same": 37 },
+    "emission": 0,
+    "light_absorption": 15
+  }
+]

@@ -1,0 +1,57 @@
+# Texture Atlas Configuration
+#
+# Maps tile indices to PNG filenames. Tile indices are the same values
+# used by the BlockRegistry (see crates/world/src/registry.rs).
+# PNG files are loaded from the same directory as this config file.
+# Any tile NOT listed here will show a blue+black checkerboard error
+# pattern, making missing textures immediately visible.
+#
+# To add a new texture:
+#   1. Add the PNG file to this directory
+#   2. Add an entry below: <tile_index> = "<filename>.png"
+#
+# Filenames use the block/face name (e.g. stone.png, grass_top.png)
+# rather than numbers, so the system scales to hundreds of textures.
+
+[tiles]
+0  = "air.png"
+1  = "stone.png"
+2  = "dirt.png"
+3  = "grass_top.png"
+4  = "grass_side.png"
+5  = "sand.png"
+6  = "water.png"
+7  = "oak_log_side.png"
+8  = "oak_log_top.png"
+9  = "oak_leaves.png"
+10 = "bedrock.png"
+11 = "coal_ore.png"
+12 = "iron_ore.png"
+13 = "gold_ore.png"
+14 = "diamond_ore.png"
+15 = "oak_planks.png"
+16 = "cobblestone.png"
+17 = "glass.png"
+18 = "gravel.png"
+19 = "snow.png"
+20 = "white.png"
+21 = "torch.png"
+22 = "bucket.png"
+23 = "water_bucket.png"
+24 = "short_grass.png"
+25 = "poppy.png"
+26 = "dandelion.png"
+27 = "cactus_side.png"
+38 = "cactus_top.png"
+39 = "cactus_bottom.png"
+28 = "mushroom_red.png"
+29 = "mushroom_brown.png"
+30 = "birch_log_side.png"
+31 = "birch_log_top.png"
+32 = "birch_leaves.png"
+33 = "spruce_log_side.png"
+34 = "spruce_log_top.png"
+35 = "spruce_leaves.png"
+36 = "mossy_cobblestone.png"
+# 37 = "chest.png"  # missing — will show error pattern
+
