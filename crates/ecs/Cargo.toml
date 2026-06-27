@@ -1,0 +1,16 @@
+[package]
+name = "voxel-ecs"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Archetype-based Entity Component System for the voxel engine."
+
+[dependencies]
+voxel-core.workspace = true
+parking_lot.workspace = true
+rayon.workspace = true
+log.workspace = true
+
+[features]
+default = []

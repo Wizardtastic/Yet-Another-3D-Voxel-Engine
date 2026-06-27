@@ -1,0 +1,14 @@
+[package]
+name = "voxel-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Shared primitives: math, IDs, config, error types, profiling."
+
+[dependencies]
+glam.workspace = true
+log.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true

@@ -1,0 +1,24 @@
+[package]
+name = "voxel-render"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Vulkan rendering backend: device, swapchain, chunk pipeline, post."
+
+[dependencies]
+voxel-core.workspace = true
+ash.workspace = true
+ash-window.workspace = true
+gpu-allocator.workspace = true
+raw-window-handle.workspace = true
+bytemuck.workspace = true
+glam.workspace = true
+log.workspace = true
+anyhow.workspace = true
+parking_lot.workspace = true
+image.workspace = true
+toml.workspace = true
+
+[features]
+default = []

@@ -1,0 +1,16 @@
+[package]
+name = "voxel-game"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Gameplay logic: player, input, block interactions, inventory, combat, mobs."
+
+[dependencies]
+voxel-core.workspace = true
+voxel-world.workspace = true
+voxel-physics.workspace = true
+glam.workspace = true
+log.workspace = true
+serde.workspace = true
+voxel-ecs = { path = "../../crates/ecs" }

@@ -1,0 +1,13 @@
+[package]
+name = "voxel-physics"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "AABB collision against voxels, ray casting (DDA), rigid body helpers."
+
+[dependencies]
+voxel-core.workspace = true
+voxel-world.workspace = true
+glam.workspace = true
+log.workspace = true

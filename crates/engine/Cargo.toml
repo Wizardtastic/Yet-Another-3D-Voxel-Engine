@@ -1,0 +1,26 @@
+[package]
+name = "voxel-engine"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Application shell: main loop, subsystem scheduling, configuration, plugin host."
+
+[dependencies]
+voxel-core.workspace = true
+voxel-ecs.workspace = true
+voxel-render.workspace = true
+voxel-world.workspace = true
+voxel-physics.workspace = true
+voxel-game.workspace = true
+voxel-assets.workspace = true
+winit.workspace = true
+raw-window-handle.workspace = true
+glam.workspace = true
+bytemuck.workspace = true
+image.workspace = true
+log.workspace = true
+anyhow.workspace = true
+toml.workspace = true
+serde.workspace = true
+serde_json.workspace = true
